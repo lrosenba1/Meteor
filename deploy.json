@@ -1,0 +1,27 @@
+{
+  "options": {
+    "meteorite": false,
+    "insecure": false,
+    "meteorRelease": "only-required-for-non-meteorite-projects"
+  },
+  "environments": {
+    "staging": {
+      "hostname": "staging.your-app.com",
+      "port": 4000,
+      "username": "meteor",
+      "password": "secure-password",
+      "deploymentDirectory": "your-app",
+      "gitBranch": "master",
+      "taskName": "your-app"
+    },
+    "production": {
+      "hostname": "your-app.com",
+      "port": 4000,
+      "username": "meteor",
+      "privateKey": "path/to/privateKey",
+      "deploymentDirectory": "your-app",
+      "gitBranch": "master",
+      "taskName": "your-app"
+    }
+  }
+}
